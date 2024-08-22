@@ -1,0 +1,31 @@
+#mainDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: bisque;
+}
+
+#infos {
+    text-align: center;
+    align-content: center;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+}
+
+#board > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    background-color: darkgray;
+}
+
+#success {
+    font-size: xx-large;
+}
+
+img {
+    width: 100%;
+}
