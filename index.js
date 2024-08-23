@@ -7,14 +7,37 @@ var correct = 0;
 onStart();
 
 function onStart() {
-    for (let i = 0; i < image.length; i++) {
-        image[i].style.display = "none";
-        divs[i].setAttribute("onclick", `showImage(${i})`)
-    } 
+    // for (let i = 0; i < image.length; i++) {
+    //     image[i].style.display = "none";
+    //     divs[i].setAttribute("onclick", `showImage(${i})`)
+    // } 
+
+    hideImages(0)
+    hideImages(1)
+    hideImages(2)
+    hideImages(3)
+    hideImages(4)
+    hideImages(5)
+    hideImages(6)
+    hideImages(7)
+    hideImages(8)
+    hideImages(9)
+    hideImages(10)
+    hideImages(11)
+    hideImages(12)
+    hideImages(13)
+    hideImages(14)
+    hideImages(15)
+}
+
+function hideImages(index) {
+    image[index].style.display = "none";
+    divs[index].setAttribute("onclick", `showImage(${index})`)
 }
 
 function showImage(index) {
     image[index].style.display = "inline"
+    // compare(index)
 
     setTimeout(() => compare(index), 1000);
 }
